@@ -1,0 +1,38 @@
+body{
+    background: #DCF5FF;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Nunito' ,  'sans-serif';
+}
+
+.container{
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+}
+
+.inner{
+    background: #00b6ff;
+    padding: 1em;
+    border-radius: 10px;
+    width: 100%;
+    clip-path: circle(10% at 80% 20%);
+    transition: clip-path .5s ease-in-out;
+}
+
+.inner:hover{
+    clip-path: circle(75%);
+}
+
+.inner h1{
+color: white;
+margin: 0;
+}
+
+.inner p {
+    color: white;
+    font-size: 0.8rem;
+}

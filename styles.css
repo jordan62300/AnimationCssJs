@@ -19,7 +19,7 @@ body{
     padding: 1em;
     border-radius: 10px;
     width: 100%;
-    clip-path: circle(10% at 80% 20%);
+    clip-path: circle(10% at 0% 0%);
     transition: clip-path .5s ease-in-out;
 }
 
@@ -36,3 +36,43 @@ margin: 0;
     color: white;
     font-size: 0.8rem;
 }
+
+/* DEUXIEME ANIM */
+
+.inner-deux {
+    background: rgb(7,218,165);
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 20%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.inner-deux:hover{
+    clip-path: circle(75%);
+    background: #00b6ff;
+}
+
+span{
+    float :right;
+    color: white;
+    font-weight: bold;
+    transition: color .5s;
+    position: relative;
+    margin-right: 4%;
+}
+
+.inner-deux:hover span{
+    color: rgba(255,255,255,0);
+}
+
+.inner-deux h1{
+    color: white;
+    margin: 0;
+    }
+    
+.inner-deux p {
+        color: white;
+        font-size: 0.8rem;
+    }

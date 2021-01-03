@@ -76,3 +76,34 @@ span{
         color: white;
         font-size: 0.8rem;
     }
+
+  /* Troisieme anim   */
+
+
+
+  .inner-trois {
+    background: rgb(7,218,165);
+    padding: 1em;
+    border-radius: 10px;
+    width: calc(100% - 2em);
+    clip-path: inset(0% 0% 0% 100%);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.container:hover .inner-trois{
+    clip-path: inset(0%);
+    background: #00b6ff;
+}
+
+
+
+.inner-trois h1{
+    color: white;
+    margin: 0;
+    }
+    
+.inner-trois p {
+        color: white;
+        font-size: 0.8rem;
+    }

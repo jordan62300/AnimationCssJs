@@ -107,3 +107,43 @@ span{
         color: white;
         font-size: 0.8rem;
     }
+
+/* QUATRIEME ANIM */
+
+.inner-quatre {
+    background: rgb(7,218,165);
+    padding: 1em;
+    border-radius: 10px;
+    transition: width .5s ease-in-out,opacity .5s ease-in-out;
+    cursor: pointer;
+}
+
+.inner-quatre:hover{
+    width: 100%;
+    opacity: 1;
+    background: #00b6ff;
+}
+
+
+
+.inner-quatre h1{
+    color: white;
+    margin: 0;
+    }
+    
+.inner-quatre p {
+        color: white;
+        font-size: 0.8rem;
+    }
+
+.transition-width{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -11,5 +11,10 @@ const animItem = bodymovin.loadAnimation({
 })
 
 play.addEventListener('click' , () => {
+    svgContainer.classList.remove('hide');
     animItem.goToAndPlay(0,true);
+})
+
+animItem.addEventListener('complete' , () => {
+    svgContainer.classList.add('hide')
 })

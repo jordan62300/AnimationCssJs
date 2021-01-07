@@ -54,5 +54,5 @@ button:active{
 }
 
 .hide{
-    
+    display: hidden;
 }

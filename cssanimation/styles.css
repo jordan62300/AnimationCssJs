@@ -1,0 +1,174 @@
+body {
+  background: #dcf5ff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Nunito", "sans-serif";
+}
+
+.container {
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+}
+
+.inner {
+  background: #00b6ff;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+  clip-path: circle(10% at 0% 0%);
+  transition: clip-path 0.5s ease-in-out;
+}
+
+.inner:hover {
+  clip-path: circle(75%);
+}
+
+.inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* DEUXIEME ANIM */
+
+.inner-deux {
+  background: rgb(7, 218, 165);
+  padding: 1em;
+  border-radius: 10px;
+  width: 250px;
+  clip-path: circle(10% at 90% 20%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner-deux:hover {
+  clip-path: circle(75%);
+  background: #00b6ff;
+}
+
+span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.inner-deux:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+.inner-deux h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner-deux p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* Troisieme anim   */
+
+.inner-trois {
+  background: rgb(7, 218, 165);
+  padding: 1em;
+  border-radius: 10px;
+  width: calc(100% - 2em);
+  clip-path: inset(0% 0% 0% 100%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.container:hover .inner-trois {
+  clip-path: inset(0%);
+  background: #00b6ff;
+}
+
+.inner-trois h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner-trois p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* QUATRIEME ANIM */
+
+.inner-quatre {
+  background: rgb(7, 218, 165);
+  padding: 1em;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.inner-quatre:hover {
+  width: 100%;
+  opacity: 1;
+  background: #00b6ff;
+}
+
+.inner-quatre h1 {
+  color: white;
+  margin: 0;
+}
+
+.inner-quatre p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.transition-width {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Animation 5 translate x */
+
+.container-animated {
+  height: 100%;
+  width: 20rem;
+  background-color: black;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@keyframe slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.translatex-animation {
+  transform: translateX(0%);
+  opacity: 1;
+}

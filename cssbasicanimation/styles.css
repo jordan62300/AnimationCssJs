@@ -111,14 +111,15 @@ span {
   background: rgb(7, 218, 165);
   padding: 1em;
   border-radius: 10px;
-  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    background 0.2s ease-in-out;
   cursor: pointer;
 }
 
 .inner-quatre:hover {
   width: 100%;
   opacity: 1;
-  background: #00b6ff;
+  background: lightcoral;
 }
 
 .inner-quatre h1 {
@@ -171,4 +172,35 @@ span {
 .translatex-animation {
   transform: translateX(0%);
   opacity: 1;
+}
+
+/* Animation 6 */
+
+.animation-six {
+  width: 30%;
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.animation-six h2 {
+  color: black;
+  padding: 1rem;
+  opacity: 0;
+}
+
+.animation-six:hover h2 {
+  animation: apparationFromTop 1.4s forwards;
+}
+
+@keyframes apparationFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

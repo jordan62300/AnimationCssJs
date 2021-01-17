@@ -9,9 +9,12 @@ span_4[0].addEventListener("click", (e) => {
     if(  inner4.style.width == "0px"){
     inner4.style.width = "100%";
     inner4.style.opacity = "1";
+    inner4.style.background = "lightcoral";
+
 }   else {
     inner4.style.width = "0";
     inner4.style.opacity = "0";
+    inner4.style.background = " rgb(7, 218, 165)";
 }
 })
 
